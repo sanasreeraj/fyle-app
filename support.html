@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fyle - Support</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="fyle-logo.jpg">
+    <link href="https://fonts.cdnfonts.com/css/helvetica-neue-9" rel="stylesheet">
+</head>
+<body>
+    <div class="container" role="main">
+        <main class="content" aria-label="Support Details">
+            <section class="section header-section" aria-labelledby="support-heading">
+                <h2 id="support-heading">Support Center</h2>
+                <img src="fyle-logo.jpg" alt="fyle logo" class="section-logo">
+                <p>We’re here to help! Find answers to common questions or reach out to our team for assistance.</p>
+                <div class="meta-grid">
+                    <div class="meta-item">
+                        <span class="meta-label">Version:</span>
+                        <span class="meta-value">1.0</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Last Updated:</span>
+                        <span class="meta-value">05 April 2025</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="faq" class="section" aria-labelledby="faq-heading">
+                <h2 id="faq-heading" data-number="1">Frequently Asked Questions</h2>
+                <div class="faq-item">
+                    <h3>What is fyle and what can it do?</h3>
+                    <p>fyle is a secure, offline document management app that helps you scan, upload, categorize, and set reminders for important documents like insurance papers, academic records, vehicle documents, and more. It extracts key information using on-device processing and keeps you notified about upcoming expiry or renewal dates.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Is an internet connection required to use fyle?</h3>
+                    <p>No. fyle works completely offline. All your data, including scanned documents and reminders, is stored locally on your device and never sent to external servers.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Where is my data stored?</h3>
+                    <p>All data is securely stored locally on your device using Apple’s Core Data framework. No documents or personal information are uploaded to the cloud or shared with third parties.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How is my privacy protected?</h3>
+                    <p>We do not collect, track, or analyze your data. The app functions without requiring login or internet access. Permissions are only used when absolutely necessary, and all disclosures are transparently listed in our <a href="/privacy-policy.html">Privacy Policy</a>.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can I recover my documents if I uninstall the app?</h3>
+                    <p>No. Uninstalling fyle permanently deletes all locally stored data. Please ensure you export or back up important documents before uninstalling the app.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How does document sharing work in fyle?</h3>
+                    <p>You can share documents via Apple’s system share sheet or use Multipeer Connectivity (offline peer-to-peer) to share with nearby fyle users. No data passes through online servers during this process.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Does fyle support cloud backups or syncing across devices?</h3>
+                    <p>Currently, fyle does not support cloud syncing. All documents remain on the device they were added to. Cloud backup and encrypted sync features may be considered for future updates.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can I mark a document as confidential?</h3>
+                    <p>While we treat all files as private and store them locally, fyle offers an option to mark a document as confidential. Confidential documents are not processed by our ML models and stay completely untouched beyond storage.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Why does fyle need camera, photo, and file access?</h3>
+                    <p><strong>Camera:</strong> To scan and upload physical documents.<br><strong>Photos:</strong> To import document images from your library.<br><strong>Files:</strong> To allow importing PDFs or files from your device or cloud sources.<br>All imported data stays local and is not accessed beyond your selection.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How do reminders work in fyle?</h3>
+                    <p>When a document includes an expiry or renewal date, fyle sets a local reminder (by default, 30 days before the due date). You can view, edit, or delete these reminders from the Reminders tab.</p>
+                </div>
+            </section>
+
+            <section id="contact" class="section" aria-labelledby="contact-heading">
+                <h2 id="contact-heading" data-number="2">Contact Us</h2>
+                <p>Need help? Submit your query below, and we’ll respond within 24-48 hours.</p>
+                <div id="form-response" class="form-response hidden">
+                    <p>Thank you for your message! We’ll get back to you soon.</p>
+                </div>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </section>
+
+            <section id="still-need-help" class="section" aria-labelledby="still-need-help-heading">
+                <h2 id="still-need-help-heading" data-number="3">Still Need Help?</h2>
+                <p>Our support team is available Monday to Friday, 9 AM to 6 PM (IST).</p>
+                <div class="contact-links">
+                    <a href="mailto:support@fyleapp.com" class="contact-link">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        support@fyleapp.com
+                    </a>
+                    <span class="contact-link">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 20v-6M12 8V6M5 12H4a9 9 0 0 1 8.9-9L16 7v.1A6 6 0 0 1 16 19h-4"></path>
+                        </svg>
+                        Response within 24 hours
+                    </span>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer" role="contentinfo">
+            <p>© 2025 Fyle. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
